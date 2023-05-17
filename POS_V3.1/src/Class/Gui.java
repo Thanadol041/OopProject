@@ -5,6 +5,7 @@
 package Class;
 
 import java.awt.Color;
+import javax.swing.JFrame;
 
 /**
  *
@@ -662,15 +663,35 @@ public class Gui extends javax.swing.JFrame {
 
         Table1Btn.setBackground(Color.WHITE);
         Table1Btn.setText("Table1");
+        Table1Btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Table1BtnMouseClicked(evt);
+            }
+        });
 
         Table3Btn.setBackground(Color.WHITE);
         Table3Btn.setText("Table3");
+        Table3Btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Table3BtnMouseClicked(evt);
+            }
+        });
 
         Table4Btn.setBackground(Color.WHITE);
         Table4Btn.setText("Table4");
+        Table4Btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Table4BtnMouseClicked(evt);
+            }
+        });
 
         Table2Btn.setBackground(Color.WHITE);
         Table2Btn.setText("Table2");
+        Table2Btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Table2BtnMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -983,6 +1004,30 @@ public class Gui extends javax.swing.JFrame {
         MocktailPanel.setVisible(false);
         SnacksPanel.setVisible(true);
         JuicePanel.setVisible(false);    }//GEN-LAST:event_SnackBtnActionPerformed
+
+    private void Table1BtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Table1BtnMouseClicked
+        Table t1 = new Table();
+        t1.setTitle("Table 1");
+        t1.setVisible(true);
+    }//GEN-LAST:event_Table1BtnMouseClicked
+
+    private void Table2BtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Table2BtnMouseClicked
+        Table t2 = new Table();
+        t2.setTitle("Table 2");
+        t2.setVisible(true);
+    }//GEN-LAST:event_Table2BtnMouseClicked
+
+    private void Table3BtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Table3BtnMouseClicked
+        Table t3 = new Table();
+        t3.setTitle("Table 3");
+        t3.setVisible(true);
+    }//GEN-LAST:event_Table3BtnMouseClicked
+
+    private void Table4BtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Table4BtnMouseClicked
+        Table t4 = new Table();
+        t4.setTitle("Table 4");
+        t4.setVisible(true);
+    }//GEN-LAST:event_Table4BtnMouseClicked
 
     /**
      * @param args the command line arguments

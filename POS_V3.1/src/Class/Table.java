@@ -4,6 +4,10 @@
  */
 package Class;
 
+import java.awt.Toolkit;
+import java.awt.event.WindowEvent;
+import javax.swing.JFrame;
+
 /**
  *
  * @author Dolfi
@@ -15,8 +19,8 @@ public class Table extends javax.swing.JFrame {
      */
     public Table() {
         initComponents();
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
-
 
     /**
      * This method is called from within the constructor to initialize the form.
